@@ -1,11 +1,13 @@
 import React from "react";
 
+import styles from "./DetailsData.scss";
+
 const DetailsData = (props) => {
-    const {temp, title} = props;
+    const {temp, unit, title} = props;
     return (
-        <div className="widget__details--data--item">
-            <span className="widget__details--data--temp">{temp} C</span>
-            <span className="widget__details--data--title">{title}</span>
+        <div className="widget__details__data--item">
+            <span className="widget__details__data--temp">{temp} {unit}</span>
+            <span className="widget__details__data--title">{title}</span>
         </div>
     )
 }

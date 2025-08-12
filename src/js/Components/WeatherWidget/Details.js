@@ -1,9 +1,9 @@
 import React from "react";
 
 import styles from "./Details.scss";
-import sunrise from "../../../assets/img/sunrise.svg";
-import sunset from "../../../assets/img/sunset.svg";
-import detailsImg from "../../../assets/img/details.svg";
+import sunrise from "../../../../assets/img/sunrise.svg";
+import sunset from "../../../../assets/img/sunset.svg";
+import detailsImg from "../../../../assets/img/details.svg";
 import DetailsData from "./DetailsData";
 
 const Details = (props) => {
@@ -26,10 +26,10 @@ const Details = (props) => {
                 </div>
             </div>
             <div className="widget__details__data">
-                <DetailsData temp={details.feel} title="RealFeel"/>
-                <DetailsData temp={details.humidity} title="Humidity"/>
-                <DetailsData temp={details.wind} title="Wind"/>
-                <DetailsData temp={details.pressure} title="Pressure"/>
+                <DetailsData temp={details.feel} unit="°C"  title="RealFeel"/>
+                <DetailsData temp={details.humidity} unit="%" title="Humidity"/>
+                <DetailsData temp={details.wind} unit="m/s" title="Wind"/>
+                <DetailsData temp={details.pressure} unit="hPa" title="Pressure"/>
             </div>
         </div>
     )
