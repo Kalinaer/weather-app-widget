@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Widget.scss";
-import Header from "./Header";
-import HourlyForecast from "./HourlyForecast";
+import Header from "./Header/Header";
+import HourlyForecast from "./HourlyForecast/HourlyForecast";
 const Widget = (props) => {
     const {city, current_temperature, state} = props.data;
     const {hourly} = props.data;
