@@ -7,7 +7,7 @@ const HourlyForecast = (props) => {
         <div className="hourly__forecast">
             {
                 forecast.map((hour, i) => {
-                    const stateImg = "../../../assets/img/"+hour.state+".svg";
+                    const stateImg = "../../../assets/img/"+hour.state+".png";
                     return (
                         <div className="hourly__forecast--item" key={i}>
                             <span>{hour.hour}</span>
