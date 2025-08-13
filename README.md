@@ -20,7 +20,7 @@ Make sure you have:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/rpritr/weather-app-widget
+git clone https://github.com/Kalinaer/weather-app-widget
 cd weather-widget
 npm install
 # or
